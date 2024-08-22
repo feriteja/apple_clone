@@ -48,7 +48,7 @@ const VideoCaraousel = () => {
     }
   }, [startPlay, videoId, isPlaying, loadedData]);
 
-  const handleLoadedMetadata = (i: any, e: any) =>
+  const handleLoadedMetadata = (_: any, e: any) =>
     setLoadedData((prev) => [...prev, e]);
 
   useEffect(() => {
